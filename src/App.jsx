@@ -38,6 +38,13 @@ setErrorMessage("")
   }
 
 }
+
+const Clearall=()=>{
+  setHeight("")
+  setWeight("")
+  setBmi(null);
+    setBmiStatus("");
+}
   
   return(
     <>
@@ -59,7 +66,7 @@ setErrorMessage("")
        </div>
 
         <button onClick={calculateBmi}>Calculate BMI</button>
-
+ <button onClick={Clearall}>Clear</button>
       {bmi !== null && (<div className="result">
         <p>Your BMI is :{bmi}</p>
         <p>Status: {bmiStatus}</p>

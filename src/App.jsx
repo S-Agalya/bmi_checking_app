@@ -20,7 +20,7 @@ if(bmivalue<18.5){
   setBmiStatus("Normal Weight")
 }else if(bmivalue >= 25 && bmivalue <29.9){
   setBmiStatus("OverWeight")
-}else if(bmivalue<30){
+}else {
   setBmiStatus("Obese")
 }
 setErrorMessage("")
